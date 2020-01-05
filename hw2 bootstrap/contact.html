@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-us">
+<!-- copied from homework 1 solution, unsuccessfully a few times this one is working -->
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Your Name</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+<!-- 2. need to create a navbar
+
+a responsive layout keeping in mind the grid, rows and columns 
+* eg. On an `xs` screen, content should take up the entire screen. On `sm` and larger screens, 
+you should have some margins on the left and right side of the screen. 
+Check out various sites on your mobile device versus your computer to see this in action!
+
+* Responsive images -->
+
+
+<!-- **BONUS**
+   Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site _(Hint: Check out the Bootstrap documentation)_
+
+3. Your Bootstrap solution should minimize use of media queries.
+
+4. Deploy your new Bootstrap-powered portfolio to GitHub Pages. -->
+ <!-- navbar fun trying to copy current top navigation, can't make it lock into the grid, and also how do i show it without the underline?-->
+ <!-- navbar fun trying to copy current top navigation, can't make it lock into the grid, and also how do i show it without the underline?-->
+ 
+ <header id="masthead">
+  <div class="container">
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link " href="index.html">Your Name</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+   </nav>
+  </div>
+</header>
+
+
+  <!-- <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Your Name</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header> -->
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 
+    </div>
+  </footer>
+</body>
+
+</html>
